@@ -1,3 +1,14 @@
 body {
-    background-image: url("./images/hangmanBackground")
+    background-image: url("../images/hangmanBackground.png")
 }
+
+p{
+    color: #138604
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    text-align: center
+
+  }
