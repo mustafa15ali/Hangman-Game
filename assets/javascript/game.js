@@ -1,15 +1,20 @@
-// (function () {
-//         "use strict";
-//         var availableLetters, words, guessInput, guess, guessButton, lettersGuessed, lettersMatched, output, man, letters, lives, currentWord, numLettersMatched, messages;
+(function () {
+        "use strict";
+        var wins, losses, maxErrors, validGuesses, pressAnyKeyToStart, pressAnyKeyToRestart, youWin, youLose, emptyAlert,
+            function setup() {
+                /* start config options */
+                win = 0;
+                losses = 0;
+                maxErrors = 9;
+                validGuesses = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+                pressAnyKeyToStart =
+                pressAnyKeyToRestart =
+                youWin =
+                youLose =
+                emptyAler =
+                    /* end of config options */
 
-//         function setup() {
-//             /* start config options */
-//             availableLetters = "abcdefghijklmnopqrstuvwxyz";
-//             lives = 5;
-//             words = ["cat", "dog", "cow", "reindeer"];
-//             messages = {
-//                 win: 'You win!',
-//                 lose: 'Game over!',
-//                 guessed: ' already guessed, please try again...',
-//                 validLetter: 'Please enter a letter from A-Z'
-//             };
+        
+
+            }
+    }
