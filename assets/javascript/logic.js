@@ -49,4 +49,15 @@ function startGame () {
 // MAIN PROCESS
 //-----------------------------------------------------------------------
 
+// Initiates the code the first time
 startGame();
+
+// Registers keyclicks
+
+document.onekeyup = function(event) {
+    var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();
+
+     // Testing/ Debugging
+     console.log(letterGuessed);
+
+}
