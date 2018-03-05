@@ -61,8 +61,8 @@ function checkLetters(letter) {
 
             }
         }
-    } 
-    
+    }
+
     //Letters wasn't found
     else {
         wrongLetters.push(letter);
