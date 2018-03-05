@@ -61,8 +61,9 @@ function checkLetters(letter) {
 
             }
         }
-    }
-
+    } 
+    
+    //Letters wasn't found
     else {
         wrongLetters.push(letter);
         guessesLeft--
@@ -77,17 +78,17 @@ function roundComplete() {
     console.log("win Count: " + winCount + " | Loss Count: " + lossCount + " | Guess Left" + guessesLeft);
 
     //Updating the HTML to reflect the most recent count stats
-    document,getElementById("guessesLeft").innerHTML = guessesLeft;
+    document, getElementById("guessesLeft").innerHTML = guessesLeft;
     document.getElementById("wordToGuess").innerHTML = blanksAndSuccesses.join("  ");
     document.getElementById("wrongGuesses").innerHTML = wrongLetters.join("  ");
 
     // check if user won
-    if(lettersinWord.toString() == blanksAndSuccesses.toString()) {
+    if (lettersinWord.toString() == blanksAndSuccesses.toString()) {
         winCounter++;
         alert("You Win!")
 
         // Update the win counter in the HTML
-        document.getElementById("winCounter"),innerHTML = winCount;
+        document.getElementById("winCounter"), innerHTML = winCount;
 
         startGame();
     }
@@ -113,7 +114,7 @@ startGame();
 
 // Registers keyclicks
 
-document.oneKeyup = function (event) {
+document.onekeyup = function (event) {
     var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();
     checkLetters(letterGuessed);
     roundComplete();
